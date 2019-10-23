@@ -2,7 +2,7 @@
   "name": "styluss",
   "version": "1.0.1",
   "description": "A different approach to inline CSS styling in React.",
-  "main": "index.js",
+  "main": "properties.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
