@@ -524,7 +524,7 @@ export const parse = (props: object) => {
     const style = {};
 
     Object.keys(props).forEach((key: string) => {
-        if (array.hasOwnProperty(key)) {
+        if (array.includes(key)) {
             style[key] = props[key];
         }
     });
