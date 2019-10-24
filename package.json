@@ -2,7 +2,7 @@
   "name": "styluss",
   "version": "1.0.5",
   "description": "A different approach to inline CSS styling in React.",
-  "main": "./lib/index.ts",
+  "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "prepublish": "tsc",
   "scripts": {
