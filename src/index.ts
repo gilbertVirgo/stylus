@@ -1,4 +1,4 @@
-export const array = [
+export const array: string[] = [
     "align-content",
     "align-items",
     "align-self",
