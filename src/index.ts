@@ -522,8 +522,8 @@ export interface all {
     sets?: object
 }
 
-export const parse = (props: object, sets?: object[]) => {
-    const style = sets ? sets.map(set => Object.keys(set).map(key => {
+export const parse = (props: object & { sets?: object[] }) => {
+    const style = props.sets ? props.sets.map(set => Object.keys(set).map(key => {
         if (array.includes(key)) {
             style[key] = props[key];
         }
