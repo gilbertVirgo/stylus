@@ -1,6 +1,6 @@
 {
   "name": "styluss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A different approach to inline CSS styling in React.",
   "main": "index.ts",
   "types": "index.d.ts",
