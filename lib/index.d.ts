@@ -258,8 +258,5 @@ export interface all {
     "word-spacing"?: string;
     "word-wrap"?: string;
     "z-index"?: string;
-    sets?: object;
 }
-export declare const parse: (props: object & {
-    sets?: object[] | undefined;
-}) => {};
+export declare const parse: (props: object) => {};

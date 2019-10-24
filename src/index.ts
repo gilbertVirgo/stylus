@@ -517,23 +517,11 @@ export interface all {
     "word-break"?: string,
     "word-spacing"?: string,
     "word-wrap"?: string,
-    "z-index"?: string,
-
-    sets?: object
+    "z-index"?: string
 }
 
-export const parse = (props: object & { sets?: object[] }) => {
+export const parse = (props: object) => {
     const style = {}
-
-    if (props.sets) {
-        props.sets.forEach(set => {
-            Object.keys(set).forEach(key => {
-                if (array.includes(key)) {
-                    style[key] = props[key];
-                }
-            });
-        });
-    }
 
     // Inline gets priority
     Object.keys(props).forEach(key => {
