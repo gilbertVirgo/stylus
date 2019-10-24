@@ -523,11 +523,17 @@ export interface all {
 }
 
 export const parse = (props: object & { sets?: object[] }) => {
-    const style = props.sets ? props.sets.map(set => Object.keys(set).map(key => {
-        if (array.includes(key)) {
-            style[key] = props[key];
-        }
-    })) : {};
+    const style = {}
+
+    if (props.sets) {
+        props.sets.forEach(set => {
+            Object.keys(set).forEach(key => {
+                if (array.includes(key)) {
+                    style[key] = props[key];
+                }
+            });
+        });
+    }
 
     // Inline gets priority
     Object.keys(props).forEach(key => {
