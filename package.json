@@ -2,8 +2,8 @@
   "name": "styluss",
   "version": "1.0.4",
   "description": "A different approach to inline CSS styling in React.",
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "main": "./lib/index.ts",
+  "types": "./lib/index.d.ts",
   "prepublish": "tsc",
   "scripts": {
     "patch": "git add . && git commit -m 'patch' && git push && npm version patch && npm publish",
