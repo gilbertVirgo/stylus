@@ -272,7 +272,7 @@ export const parse = (props: object) => {
     Object.keys(props).forEach(key => {
         const cc = _.camelCase(key);
         if (array.includes(cc)) {
-            style[cc] = props[cc];
+            style[cc] = props[key];
         }
     });
 
